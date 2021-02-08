@@ -1,17 +1,20 @@
 import React from "react";
-import "./Search.css";
+import axios from "axios";
+import "./Weather.css";
 
-export default function Search () {
+export default function Weather () {
 	return (
 		<div className="container">
-			<div className="row">
-				<div className="col-12">
+			<div className="row justify-content-center">
+				<div className="col-12 col-lg-10">
 					<div className="card p-4 m-4">
 						<div className="row">
 							<div className="col-8">
 								<h1>Cincinnati</h1>
-								<h3>Sunday 18:16</h3>
-								<h3>Light Rain</h3>
+								<ul>
+									<li>Sunday 18:16</li>
+									<li>Light Rain</li>
+								</ul>
 							</div>
 							<div className="col-4">
 								<form>
@@ -19,8 +22,13 @@ export default function Search () {
 										type="text"
 										placeholder="Enter a city"
 									/>
-									<input type="submit" value="Search" className="btn btn-primary mt-3" />
+									<input type="submit" value="Search" className="btn btn-primary mt-3 d-block" />
 								</form>
+								<ul>
+									<li>Precipitation: 0%</li>
+									<li>Humidity: 21%</li>
+									<li>Wind: 12mph</li>
+								</ul>
 							</div>
 						</div>
 						<div className="row">
