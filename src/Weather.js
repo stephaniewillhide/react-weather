@@ -42,25 +42,27 @@ export default function Weather(props) {
 				<div className="row justify-content-center">
 					<div className="col-12 col-lg-10">
 						<div className="card p-4 m-4">
-							<div className="row">
-								<div className="col-12">
-									<form onSubmit={handleSubmit}>
+							<form onSubmit={handleSubmit}>
+								<div className="row pb-4">
+									<div className="col-9">
 										<input
-											type="text"
-											placeholder="Enter a city"
+											type="search"
+											placeholder="Enter a city.."
+											className="form-control"
+											autoFocus="on"
 											onChange={handleCityChange}
 										/>
-										<input type="submit" value="Search" className="btn btn-primary mt-3 d-block" />
-									</form>
+									</div>
+									<div className="col-3">
+										<input
+											type="submit"
+											value="Search"
+											className="btn btn-teal w-100"
+										/>
+									</div>
 								</div>
-							</div>
+							</form>
 							<WeatherInfo data={weatherData} />
-							<div className="row">
-								<div className="col-12">
-									<h1 className="d-inline">{Math.round(weatherData.temperature)}</h1>
-									<img className="img-50" src={weatherData.iconUrl} alt={weatherData.description} />
-								</div>
-							</div>
 							<div className="row pt-4">
 								<div className="col-4 col-sm-2 text-center pb-3">
 									<h3 className="h5">

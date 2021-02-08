@@ -1,5 +1,5 @@
 .card {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-color:#edd9d5;
   border:#5F5F5C;
 }
 
@@ -7,4 +7,19 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Yusei Magic', sans-serif;
   letter-spacing: 3px;
   color:#5F5F5C;
+}
+
+li {
+  list-style-type: none;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.btn-teal {
+  color: #fff;
+  background-color: #0c878a;
+  border-color: #0c878a;
 }
