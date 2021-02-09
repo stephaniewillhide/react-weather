@@ -6,7 +6,13 @@ export default function App() {
   return (
     <div className="App">
       <Weather defaultCity="Cincinnati" />
-      <a href="https://github.com/stephaniewillhide/react-weather">Open source code by Steph</a>
+      <div className="container">
+        <div className="row justify-content-center">
+					<div className="col-12 col-lg-10">
+            <a href="https://github.com/stephaniewillhide/react-weather">Open source code by Steph</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -3,10 +3,10 @@
   border:#5F5F5C;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+body {
   font-family: 'Yusei Magic', sans-serif;
-  letter-spacing: 3px;
   color:#5F5F5C;
+  letter-spacing: 2px;
 }
 
 li {
@@ -22,4 +22,8 @@ ul {
   color: #fff;
   background-color: #0c878a;
   border-color: #0c878a;
+}
+
+a {
+  color: #0c878a;
 }

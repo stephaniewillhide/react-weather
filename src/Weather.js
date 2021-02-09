@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo"
+import WeatherForecast from "./WeatherForecast"
 import axios from "axios";
 import "./Weather.css";
 
@@ -47,7 +48,7 @@ export default function Weather(props) {
 									<div className="col-12 col-sm-9">
 										<input
 											type="search"
-											placeholder="Enter a city.."
+											placeholder="Enter a city"
 											className="form-control"
 											autoFocus="on"
 											onChange={handleCityChange}
@@ -63,43 +64,7 @@ export default function Weather(props) {
 								</div>
 							</form>
 							<WeatherInfo data={weatherData} />
-							<div className="row pt-4">
-								<div className="col-4 col-sm-2 text-center pb-3">
-									<h3 className="h5">
-										20:00
-									</h3>
-									<img className="img-50" src="http://openweathermap.org/img/wn/10n@2x.png" alt="Icon" />
-									<h6>36°</h6>
-								</div>
-								<div className="col-4 col-sm-2 text-center pb-3">
-									<h3 className="h5">
-										20:00
-									</h3>
-									<img className="img-50" src="http://openweathermap.org/img/wn/10n@2x.png" alt="Icon" />
-									<h6>32°</h6>
-								</div>
-								<div className="col-4 col-sm-2 text-center pb-3">
-									<h3 className="h5">
-										22:00
-									</h3>
-									<img className="img-50" src="http://openweathermap.org/img/wn/10n@2x.png" alt="Icon" />
-									<h6>31°</h6>
-								</div>
-								<div className="col-4 col-sm-2 text-center pb-3">
-									<h3 className="h5">
-										24:00
-									</h3>
-									<img className="img-50" src="http://openweathermap.org/img/wn/10n@2x.png" alt="Icon" />
-									<h6>28°</h6>
-								</div>
-								<div className="col-4 col-sm-2 text-center pb-3">
-									<h3 className="h5">
-										2:00
-									</h3>
-									<img className="img-50" src="http://openweathermap.org/img/wn/10n@2x.png" alt="Icon" />
-									<h6>28°</h6>
-								</div>
-							</div>
+							<WeatherForecast city={weatherData.city} />
 						</div>
 					</div>
 				</div>
