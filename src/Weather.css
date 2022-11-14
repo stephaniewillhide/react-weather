@@ -4,14 +4,14 @@
 }
 
 body {
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: 'Calistoga', sans-serif;
   color:#5F5F5C;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 li {
   list-style-type: none;
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: 'Calistoga', sans-serif;
 }
 
 ul {
@@ -26,4 +26,9 @@ ul {
 
 a {
   color: #0c878a;
+}
+
+.form-control:focus {
+  border-color: unset;
+  box-shadow: unset;
 }

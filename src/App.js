@@ -9,7 +9,7 @@ export default function App() {
       <div className="container">
         <div className="row justify-content-center">
 					<div className="col-12 col-lg-10">
-            <a href="https://github.com/stephaniewillhide/react-weather">Open source code by Steph</a>
+            <a href="https://github.com/stephaniewillhide/react-weather" class="pl-5">GitHub Repo</a>
           </div>
         </div>
       </div>
