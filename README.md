@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React Weather App
+
+Visit my [live weather app](https://unruffled-cori-7061b5.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
